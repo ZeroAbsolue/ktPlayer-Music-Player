@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.ktplayer.Main",
+            "projectName": "ktplayer",
+            "vmArgs": "--module-path \"C:/Users/Administrator/Downloads/openjfx-17.0.2_windows-x64_bin-sdk/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.fxml,javafx.media,javafx.base"
+
+        }
+    ]
+}
