@@ -70,40 +70,40 @@ public class Controller {
 
 
     @FXML
-    private Label artistName;
+    protected Label artistName;
     @FXML
-    private Label albumName;
+    protected Label albumName;
     @FXML
-    private Label songName;
+    protected Label songName;
     @FXML
-    private Label totalDuration;
+    protected Label totalDuration;
     @FXML
-    private Label currentDuration;
+    protected Label currentDuration;
     @FXML
-    private Label volumeValue;
+    protected Label volumeValue;
     @FXML
     private Label songsCounter;
 
     @FXML
-    private JFXSlider songSlider;
+    protected JFXSlider songSlider;
     @FXML
-    private Slider volumeSlider;
+    protected Slider volumeSlider;
 
     @FXML
     private ImageView folderChooser;
 
     @FXML
-    private ImageView playButton;
+    protected ImageView playButton;
     @FXML
-    private ImageView pauseButton;
+    protected ImageView pauseButton;
     @FXML
-    private ImageView nextSongButton;
+    protected ImageView nextSongButton;
     @FXML
-    private ImageView previousSongButton;
+    protected ImageView previousSongButton;
     @FXML
-    private ImageView muteIcon;
+    protected ImageView muteIcon;
     @FXML
-    private ImageView volumeIcon;
+    protected ImageView volumeIcon;
     @FXML
     private ToggleButton autoPlayIcon;
 
@@ -113,7 +113,7 @@ public class Controller {
 
     private Main main;
 
-    private List<MediaPlayer> players;
+    protected List<MediaPlayer> players;
     private MediaPlayer mediaPlayer;
     private MediaView mediaView;
 
@@ -130,11 +130,11 @@ public class Controller {
 
     public Controller() {
         players = new ArrayList<>();
-        songSlider = new JFXSlider();
+        // songSlider = new JFXSlider();
         isAutoplay = false;
         volume = 0.1;
-        stage = Main.getStage();
-        stage.getIcons().add(new Image(ClassLoader.getSystemResource("images/logo.png").toExternalForm()));
+         stage = Main.getStage();
+//         stage.getIcons().add(new Image(ClassLoader.getSystemResource("images/logo.png").toExternalForm()));
     }
 
     @FXML
@@ -538,7 +538,7 @@ public class Controller {
         }
     }
 
-    private void volumeHandler() {
+    protected void volumeHandler() {
         volumeSlider.valueProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
@@ -550,7 +550,7 @@ public class Controller {
         });
     }
 
-    private void volumeIconChanger() {
+    protected void volumeIconChanger() {
         if(volumeSlider.getValue() == 0) {
             muteIcon.setVisible(true);
             volumeIcon.setVisible(false);

@@ -1,0 +1,1 @@
+{"ktPlayer-Music-Player":{"name":"ktPlayer-Music-Player","packages":{"com.ktplayer":{"packageName":"com.ktplayer","isAll":false,"classes":["Lcom/ktplayer/Controller;"]}}}}

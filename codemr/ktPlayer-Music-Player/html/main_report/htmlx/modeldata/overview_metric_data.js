@@ -1,0 +1,1 @@
+var CodeMR_ProjectMetrics = {"Project Name":"ktPlayer-Music-Player", "Number of Highly Problematic Classes":0, "Number of Entities":1, "Number of Problematic Classes":1, "Class Lines of Code":426, "Number of External Packages":25, "Number of Packages":1, "Number of External Entities":69}

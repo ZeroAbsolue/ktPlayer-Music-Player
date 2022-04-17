@@ -36,7 +36,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("ktPlayer 0.1v");
         primaryStage.setScene(scene);
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        // primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setResizable(true);
         primaryStage.show();
     }
